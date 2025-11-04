@@ -1,0 +1,17 @@
+//Equation 1: Calculate the height of a right triangle.
+import java.util.Scanner;
+public class MathPractise{
+    public static void main(String[] args){
+        System.out.println("Calculate the height of a right triangle");
+        Scanner input=new Scanner(System.in);
+        double base;
+        System.out.println("Enter the value of base: ");
+        base=input.nextDouble();
+        System.out.println("Enter angle(theta in degree): ");
+        double theta;
+        theta=input.nextDouble();
+         double height=base*Math.tan(Math.toRadians(theta));
+         System.out.println("The ultimate height is: "+height);
+        
+    }
+}
